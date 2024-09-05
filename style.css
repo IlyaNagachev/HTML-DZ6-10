@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: rgb(241, 228, 230);
+    height: 764px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+p,
+a,
+button {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgb(34, 34, 34);
+}
+
+.navigation {
+    width: 1600px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.navigation button {
+    background: transparent;
+    border: 0;
+}
+
+.navContent_leftSide1 {
+    position: absolute;
+    width: 44px;
+    height: 38px;
+    left: 231px;
+    top: 18px;  
+    background: rgb(34, 34, 34);
+}
+
+.navContent_leftSide2 {
+    position: absolute;
+    width: 26px;
+    height: 26.79px;
+    left: 316px;
+    top: 28.21px;
+}
+
+.navContent_rightSide1{
+    position: absolute;
+    width: 32px;
+    height: 23px;
+    left: 1201px;
+    top: 30px;
+}
+
+.navContent_rightSide2 {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    left: 1266px;
+    top: 26px;
+}
+
+.navContent_rightSide3 {
+    position: absolute;
+    width: 32px;
+    height: 29px;
+    left: 1328px;
+    top: 26px;
+}
+
+
+.mainContent_leftSide {
+    position: absolute;
+    width: 800.58px;
+    height: 764px;
+    left: 0;
+    top: 75px;
+}
+
+.mainContent_rightSide h2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 295px;
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0%;
+}
+
+.mainContent_rightSide h1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 200px;
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0%;
+}
+
+.main2 {
+    position: relative;
+    width: 1600px;
+    height: 2925px;
+    background: rgb(255, 255, 255);
+    margin-top: 390px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category1 {
+    display: flex;
+    flex-direction: space-between;
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.category2 {
+    display: flex;
+    margin-top: 30px;
+}
+
+.category button {
+    background: transparent;
+    border: 0;
+}
