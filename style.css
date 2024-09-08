@@ -151,3 +151,109 @@ button {
     background: transparent;
     border: 0;
 }
+
+.category1 {
+    position: relative;
+    display: inline-block;
+}
+
+.category1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.category2 {
+    position: relative;
+    display: inline-block;
+}
+
+.category2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mainText h1 {
+    color: rgb(34, 34, 34);
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 711px;
+    margin-top: 96px;
+}
+
+.mainText p {
+    color: rgb(159, 159, 159);
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 6px;
+    margin-left: 631px;
+    margin-bottom: 48px;
+}
+
+.cardList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.card {
+    max-width: 360px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.card p {
+    color: rgb(93, 93, 93);
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 13px;
+}
+
+.card h2 {
+    color: rgb(241, 109, 127);
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;    
+    margin-top: 18px;
+}
