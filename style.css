@@ -50,61 +50,59 @@ button {
 }
 
 .navContent_leftSide1 {
-    position: absolute;
-    width: 44px;
-    height: 38px;
-    left: 231px;
-    top: 18px;  
+    display: flex;
+    align-items: center;  
+    margin-left: 231px;
     background: rgb(34, 34, 34);
 }
 
 .navContent_leftSide2 {
-    position: absolute;
-    width: 26px;
-    height: 26.79px;
-    left: 316px;
-    top: 28.21px;
+    display: flex;
+    align-items: center;
+    margin-left: 41px;
 }
 
 .navContent_rightSide1{
-    position: absolute;
-    width: 32px;
-    height: 23px;
-    left: 1201px;
-    top: 30px;
+    display: flex;
+    align-items: center;  
+    margin-left: 859px;
 }
 
 .navContent_rightSide2 {
-    position: absolute;
-    width: 29px;
-    height: 29px;
-    left: 1266px;
-    top: 26px;
+    display: flex;
+    align-items: center;  
+    margin-left: 65px;
 }
 
 .navContent_rightSide3 {
-    position: absolute;
-    width: 32px;
-    height: 29px;
-    left: 1328px;
-    top: 26px;
+    display: flex;
+    align-items: center;  
+    margin-left: 65px;
 }
 
+.mainContent {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
 
 .mainContent_leftSide {
-    position: absolute;
-    width: 800.58px;
-    height: 764px;
-    left: 0;
-    top: 75px;
+    display: flex;
+    flex: 0 0 800.58px;
+}
+
+.mainContent_leftSide img {
+    max-width: 100%; 
+    height: auto; 
 }
 
 .mainContent_rightSide h2 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-end;
-    margin-top: 295px;
+    flex: 1;
     font-family: 'Lato';
+    margin-top: 290px;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 0%;
@@ -112,9 +110,9 @@ button {
 
 .mainContent_rightSide h1 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-end;
-    margin-left: 200px;
+    flex-grow: 1;
     font-family: 'Lato';
     font-size: 32px;
     font-weight: 700;
@@ -126,7 +124,6 @@ button {
     width: 1600px;
     height: 2925px;
     background: rgb(255, 255, 255);
-    margin-top: 390px;
 }
 
 .category {
@@ -142,9 +139,21 @@ button {
     margin-top: 65px;
 }
 
+.category1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .category2 {
     display: flex;
     margin-top: 30px;
+}
+
+.category2 img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .category button {
@@ -152,36 +161,14 @@ button {
     border: 0;
 }
 
-.category1 {
-    position: relative;
-    display: inline-block;
-}
-
-.category1 img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 24px;
     text-align: center;
-}
-
-.category2 {
-    position: relative;
-    display: inline-block;
-}
-
-.category2 img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .mainText h1 {
@@ -265,55 +252,47 @@ button {
     }
 
     .navigation {
-        width: 768px;
+        width: 770px;
         height: 74px;
     }
-
-    .navContent_leftSide1 {
-        left: 32px;
-    }
     
-    .navContent_leftSide2 {
-        left: 117px;
+    .navContent_leftSide1 {
+        margin-left: 32px;
     }
     
     .navContent_rightSide1{
-        left: 567px;
+    margin-left: 424px;
     }
     
     .navContent_rightSide2 {
-        left: 624px;
+        margin-left: 33px;
     }
     
     .navContent_rightSide3 {
-        left: 695px;
+        margin-left: 33px;
     }
     
+    .mainContent {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+    }
     
     .mainContent_leftSide {
-        width: 386px;
-        height: 368px;
-        top: 74px;
+        flex: 0 0 386px;
     }
     
     .mainContent_rightSide h2 {
-        margin-top: 453px;
-        font-size: 24px;
-    }
-    
-    .mainContent_rightSide h1 {
-        margin-left: 453px;
-        font-size: 24px;
+        margin-top: 138px;
     }
 
     .category1 {
-        gap: 20px;
+        gap: 19.9px;
         margin-top: 65px;
     }
     
     .category2 {
         display: flex;
-        margin-top: 20px;
     }
 
     .mainText h1 {
@@ -332,6 +311,94 @@ button {
         gap: 16px;
         margin-left: 16px;
         margin-right: 16px;
+    }
+    
+    .card {
+        max-width: 360px;
+    }
+}
+
+@media(max-width: 375px) {
+    
+    .container {
+        max-width: 375px;
+    }
+
+    .navigation {
+        width: 375px;
+        height: 74px;
+    }
+    
+    .navContent_leftSide1 {
+        margin-left: 16px;
+    }
+
+    .navContent_leftSide2 {
+        margin-left: 41px;
+    }
+    
+    .navContent_rightSide1{
+    margin-left: 200px;
+    }
+
+    .navContent_rightSide2 {
+        display: none;
+    }
+    
+    .navContent_rightSide3 {
+        display: none;
+    }
+
+    .mainContent {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+    }
+    
+    .mainContent_leftSide {
+        display: none;
+    }
+    
+    .mainContent_rightSide h2 {
+        justify-content: center;
+        margin-top: 148px;
+        margin-left: 83px;
+    }
+
+    .mainContent_rightSide h1 {
+        margin-bottom: 148px;
+        margin-left: 83px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    .category1 {
+        gap: 32px;
+        margin-top: 64px;
+        flex-direction: column;
+    }
+    
+    .category2 {
+        display: flex;
+    }
+
+    .mainText h1 {
+        margin-left: 99.26px;
+        margin-top: 64px;
+    }
+    
+    .mainText p {
+        margin-top: 3px;
+        margin-left: 25px;
+        margin-bottom: 64.7px;
+    }
+    
+    .cardList {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
     
     .card {
