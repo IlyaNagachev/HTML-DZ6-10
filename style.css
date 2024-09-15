@@ -122,7 +122,7 @@ button {
 .main2 {
     position: relative;
     width: 1600px;
-    height: 2925px;
+    height: 2121px;
     background: rgb(255, 255, 255);
 }
 
@@ -245,7 +245,72 @@ button {
     margin-top: 18px;
 }
 
-@media(min-width: 770px) and (max-width: 1146px) {
+
+.buttonAllProduct button{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    color: rgb(242, 99, 118);
+    border: 1px solid rgb(255, 106, 106);
+    padding: 15px 30px;
+    background: white;
+    font-size: 20px;
+    cursor: pointer;  
+}
+
+.main3 {
+    height: 341px;
+    background: rgb(34, 34, 36);
+}
+
+.main3Icon {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.main3Icon h1 {
+    color: rgb(251, 251, 251);
+    font-family: 'Lato';
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.main3Icon p {
+    color: rgb(251, 251, 251);
+    font-family: 'Lato';
+    font-size: 13.97px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.main3Icon1 {
+    margin-left: 230px;
+    margin-top: 103px;
+    max-width: 360px;
+    align-items: center;
+}
+
+.main3Icon2 {
+    margin-left: 30px;
+    margin-top: 103px;
+    max-width: 360px;
+    align-items: center;
+}
+
+.main3Icon3 {
+    margin-left: 30px;
+    margin-top: 103px;
+    max-width: 360px;
+    align-items: center;
+}
+
+
+@media(min-width: 376px) and (max-width: 1146px) {
     
     .container {
         max-width: 770px;
@@ -261,7 +326,7 @@ button {
     }
     
     .navContent_rightSide1{
-    margin-left: 424px;
+        margin-left: 424px;
     }
     
     .navContent_rightSide2 {
