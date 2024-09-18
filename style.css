@@ -81,6 +81,39 @@ button {
     margin-left: 65px;
 }
 
+.menu-container {
+    position: relative;
+}
+
+#menu {
+    color: rgb(111, 110, 110);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    background-color: rgb(255, 255, 255); 
+    border: 1px solid #ccc; 
+    position: absolute; 
+    top: 40px; 
+    right: 0px;
+    top: 75px;
+}
+
+#menu li {
+    padding: 10px; 
+}
+
+#menu li:hover {
+    background-color: #e0e0e0; 
+}
+
+.hidden {
+    display: none; 
+}
+
 .mainContent {
     display: flex;
     width: 100%;
