@@ -47,6 +47,7 @@ button {
 .navigation button {
     background: transparent;
     border: 0;
+    cursor: pointer; 
 }
 
 .navContent_leftSide1 {
@@ -206,10 +207,17 @@ button {
 
 .card {
     max-width: 360px;
+    position: relative; 
+    overflow: hidden; 
 }
 
 .card img {
     width: 100%;
+    transition: filter 0.3s ease;
+}
+
+.card:hover img {
+    filter: brightness(0.5);
 }
 
 .card h1 {
@@ -245,6 +253,29 @@ button {
     margin-top: 18px;
 }
 
+.add-to-cart {
+    position: absolute; 
+    top: 38%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: #f8f7f700; 
+    color: rgb(255, 255, 255);
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    border: 1; 
+    border-color: white;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    z-index: 2; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.card:hover .add-to-cart {
+    opacity: 1; 
+}
 
 .buttonAllProduct button{
     display: flex;
@@ -307,6 +338,84 @@ button {
     margin-top: 103px;
     max-width: 360px;
     align-items: center;
+}
+
+.preFinalPart {
+    height: 448px;
+    background-image: url('./img/page 5/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.contentLeftSide {
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    max-height: 99px;
+    margin-bottom: 126px;
+}
+
+.contentLeftSide p {
+    color: rgb(34, 34, 36);
+    font-family: 'Lato';
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.contentLeftSide img {
+    margin-left: 98px;
+}
+
+.contentRightSide {
+    position: relative;
+    z-index: 1;
+    max-width: 557px;
+    max-height: 142px;
+    margin-left: 223px;
+}
+
+.contentRightSide h2 {
+    color: rgb(34, 34, 36);
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 167.2%;
+    margin-bottom: 32px;
+}
+
+.finalPart {
+    height: 79px;
+    background: rgb(34, 34, 36);
+    display: flex;
+    align-items: center;
+}
+
+.finalPart p {
+    color: rgb(251, 251, 251);
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 235px;
+}
+
+.finalPart button {
+    border: 0;
+    cursor: pointer; 
+}
+
+.icon1Final {
+    margin-left: 655px;
+}
+
+.icon2Final {
+    margin-left: 7px;
 }
 
 
@@ -380,6 +489,72 @@ button {
     
     .card {
         max-width: 360px;
+    }
+
+    .main3 {
+        margin-top: 500px;
+        height: 610px;
+    }
+    
+    .main3Icon {
+        gap: 48px;
+        align-items: column;
+    }
+    
+    .main3Icon1 {
+        margin-left: 364px;
+        margin-top: 48px;
+    }
+    
+    .main3Icon2 {
+        margin-left: 364px;
+        margin-top: 48px;
+    }
+    
+    .main3Icon3 {
+        margin-left: 364px;
+        margin-top: 48px;
+    }
+
+    .main3Icon p {
+        text-align: column;
+    }
+    
+    .preFinalPart {
+        height: 693px;
+        justify-content: column;
+        align-items: column;
+        text-align: column;
+    }
+    
+    .contentLeftSide {
+        max-width: 360px;
+        max-height: 99px;
+        margin-bottom: 126px;
+    }
+    
+    .finalPart {
+        height: 79px;
+        background: rgb(34, 34, 36);
+        display: flex;
+        align-items: center;
+    }
+    
+    .finalPart p {
+        margin-left: 32px;
+    }
+    
+    .finalPart button {
+        border: 0;
+        cursor: pointer; 
+    }
+    
+    .icon1Final {
+        margin-left: 305px;
+    }
+    
+    .icon2Final {
+        margin-left: 7px;
     }
 }
 
@@ -468,5 +643,71 @@ button {
     
     .card {
         max-width: 360px;
+    }
+
+    .main3 {
+        margin-top: 500px;
+        height: 610px;
+    }
+    
+    .main3Icon {
+        gap: 48px;
+        align-items: column;
+    }
+    
+    .main3Icon1 {
+        margin-left: 166px;
+        margin-top: 48px;
+    }
+    
+    .main3Icon2 {
+        margin-left: 166px;
+        margin-top: 48px;
+    }
+    
+    .main3Icon3 {
+        margin-left: 166px;
+        margin-top: 48px;
+    }
+
+    .main3Icon p {
+        text-align: column;
+    }
+    
+    .preFinalPart {
+        height: 2000px;
+        justify-content: column;
+        align-items: column;
+        text-align: column;
+    }
+    
+    .contentLeftSide {
+        max-width: 360px;
+        max-height: 99px;
+        margin-bottom: 126px;
+    }
+    
+    .finalPart {
+        height: 143px;
+        background: rgb(34, 34, 36);
+        display: flex;
+        align-items: center;
+    }
+    
+    .finalPart p {
+        margin-left: 32px;
+    }
+    
+    .finalPart button {
+        border: 0;
+        cursor: pointer; 
+    }
+    
+    .icon1Final {
+        margin-left: 305px;
+    }
+    
+    .icon2Final {
+        margin-left: 7px;
     }
 }
